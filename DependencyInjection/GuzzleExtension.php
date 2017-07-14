@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\DependencyInjection;
+namespace plimpton\Bundle\GuzzleBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
@@ -170,7 +170,7 @@ class GuzzleExtension extends Extension
         if ($config['logging'] === true) {
             $logger = new Definition('%guzzle_bundle.logger.class%');
         } else {
-            $logger = new Definition('EightPoints\Bundle\GuzzleBundle\Log\DevNullLogger');
+            $logger = new Definition('plimpton\Bundle\GuzzleBundle\Log\DevNullLogger');
         }
 
         $container->setDefinition('guzzle_bundle.logger', $logger);

@@ -1,10 +1,10 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Middleware;
+namespace plimpton\Bundle\GuzzleBundle\Middleware;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\MessageFormatter;
-use EightPoints\Bundle\GuzzleBundle\Log\LoggerInterface;
+use plimpton\Bundle\GuzzleBundle\Log\LoggerInterface;
 
 /**
  * @version   3.0

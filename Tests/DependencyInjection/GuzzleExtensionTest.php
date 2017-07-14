@@ -1,11 +1,11 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Tests\DependencyInjection;
+namespace plimpton\Bundle\GuzzleBundle\Tests\DependencyInjection;
 
-use EightPoints\Bundle\GuzzleBundle\DependencyInjection\GuzzleExtension;
-use EightPoints\Bundle\GuzzleBundle\Tests\DependencyInjection\Fixtures\FakeClient;
-use EightPoints\Bundle\GuzzleBundle\Tests\DependencyInjection\Fixtures\FakeWsseAuthMiddleware;
-use EightPoints\Guzzle\WsseAuthMiddleware;
+use plimpton\Bundle\GuzzleBundle\DependencyInjection\GuzzleExtension;
+use plimpton\Bundle\GuzzleBundle\Tests\DependencyInjection\Fixtures\FakeClient;
+use plimpton\Bundle\GuzzleBundle\Tests\DependencyInjection\Fixtures\FakeWsseAuthMiddleware;
+use plimpton\Guzzle\WsseAuthMiddleware;
 use GuzzleHttp\Psr7\Uri;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 

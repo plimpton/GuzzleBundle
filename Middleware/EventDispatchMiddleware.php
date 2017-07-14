@@ -1,13 +1,13 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Middleware;
+namespace plimpton\Bundle\GuzzleBundle\Middleware;
 
-use EightPoints\Bundle\GuzzleBundle\Events\PostTransactionEvent;
+use plimpton\Bundle\GuzzleBundle\Events\PostTransactionEvent;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use EightPoints\Bundle\GuzzleBundle\Events\GuzzleEvents;
-use EightPoints\Bundle\GuzzleBundle\Events\PreTransactionEvent;
+use plimpton\Bundle\GuzzleBundle\Events\GuzzleEvents;
+use plimpton\Bundle\GuzzleBundle\Events\PreTransactionEvent;
 
 /**
  * Dispatches an Event using the Symfony Event Dispatcher.

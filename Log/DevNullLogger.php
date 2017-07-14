@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Log;
+namespace plimpton\Bundle\GuzzleBundle\Log;
 
 use Psr\Log\LoggerTrait;
 
@@ -10,7 +10,7 @@ use Psr\Log\LoggerTrait;
  * @author    SuRiKmAn <surikman@surikman.sk>
  * @version   5.0
  * @since     2016-11
- * @package   EightPoints\Bundle\GuzzleBundle\Log
+ * @package   plimpton\Bundle\GuzzleBundle\Log
  */
 class DevNullLogger implements LoggerInterface
 {

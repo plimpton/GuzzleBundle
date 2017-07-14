@@ -1,9 +1,9 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\DataCollector;
+namespace plimpton\Bundle\GuzzleBundle\DataCollector;
 
-use EightPoints\Bundle\GuzzleBundle\Log\LogGroup;
-use EightPoints\Bundle\GuzzleBundle\Log\LoggerInterface;
+use plimpton\Bundle\GuzzleBundle\Log\LogGroup;
+use plimpton\Bundle\GuzzleBundle\Log\LoggerInterface;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,7 +18,7 @@ class HttpDataCollector extends DataCollector
 {
 
     /**
-     * @var \EightPoints\Bundle\GuzzleBundle\Log\Logger $logger
+     * @var \plimpton\Bundle\GuzzleBundle\Log\Logger $logger
      */
     protected $logger;
 

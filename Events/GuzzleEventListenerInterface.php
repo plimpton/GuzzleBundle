@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Events;
+namespace plimpton\Bundle\GuzzleBundle\Events;
 
 interface GuzzleEventListenerInterface
 {

@@ -1,5 +1,5 @@
 {
-  "name":        "eightpoints/guzzle-bundle",
+  "name":        "plimpton/guzzle-bundle",
   "type":        "symfony-bundle",
   "description": "Integrates Guzzle into Symfony2, comes with WSSE Plugin for RESTful Interfaces",
   "keywords": [
@@ -39,10 +39,10 @@
     "phpunit/phpunit": "~5.4",
     "symfony/config":  "2.3|~3.0"
   },
-  "target-dir": "EightPoints/Bundle/GuzzleBundle",
+  "target-dir": "plimpton/Bundle/GuzzleBundle",
   "autoload": {
     "psr-0": {
-      "EightPoints\\Bundle\\GuzzleBundle": ""
+      "plimpton\\Bundle\\GuzzleBundle": ""
     }
   }
 }

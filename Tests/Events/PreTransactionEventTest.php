@@ -1,8 +1,8 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Tests\Events;
+namespace plimpton\Bundle\GuzzleBundle\Tests\Events;
 
-use EightPoints\Bundle\GuzzleBundle\Events\PreTransactionEvent;
+use plimpton\Bundle\GuzzleBundle\Events\PreTransactionEvent;
 
 /**
  * @version   4.5
@@ -16,7 +16,7 @@ class PreTransactionEventTest extends \PHPUnit_Framework_TestCase
      * @version 4.5
      * @since   2016-01
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\Events\PreTransactionEvent::__construct
+     * @covers  plimpton\Bundle\GuzzleBundle\Events\PreTransactionEvent::__construct
      */
     public function testConstruct()
     {
@@ -36,8 +36,8 @@ class PreTransactionEventTest extends \PHPUnit_Framework_TestCase
      * @version 4.5
      * @since   2016-01
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\Events\PreTransactionEvent::setTransaction
-     * @covers  EightPoints\Bundle\GuzzleBundle\Events\PreTransactionEvent::getTransaction
+     * @covers  plimpton\Bundle\GuzzleBundle\Events\PreTransactionEvent::setTransaction
+     * @covers  plimpton\Bundle\GuzzleBundle\Events\PreTransactionEvent::getTransaction
      */
     public function testTranscation()
     {

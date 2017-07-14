@@ -1,8 +1,8 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Tests\DependencyInjection;
+namespace plimpton\Bundle\GuzzleBundle\Tests\DependencyInjection;
 
-use EightPoints\Bundle\GuzzleBundle\DependencyInjection\Configuration;
+use plimpton\Bundle\GuzzleBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 

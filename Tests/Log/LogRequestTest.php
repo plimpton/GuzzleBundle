@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Tests\Log;
+namespace plimpton\Bundle\GuzzleBundle\Tests\Log;
 
 /**
  * @version   2.1

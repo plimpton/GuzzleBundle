@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Log;
+namespace plimpton\Bundle\GuzzleBundle\Log;
 
 use Psr\Log;
 
@@ -8,7 +8,7 @@ use Psr\Log;
  * Interface LoggerInterface
  *
  * @author  SuRiKmAn <surikman@surikman.sk>
- * @package EightPoints\Bundle\GuzzleBundle\Log
+ * @package plimpton\Bundle\GuzzleBundle\Log
  */
 interface LoggerInterface extends Log\LoggerInterface
 {

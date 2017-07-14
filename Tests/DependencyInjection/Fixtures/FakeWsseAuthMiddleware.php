@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Tests\DependencyInjection\Fixtures;
+namespace plimpton\Bundle\GuzzleBundle\Tests\DependencyInjection\Fixtures;
 
 /**
  * @since 2016-01

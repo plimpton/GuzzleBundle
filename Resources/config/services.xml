@@ -8,16 +8,16 @@
 		<parameter key="guzzle.middleware.class">GuzzleHttp\Middleware</parameter>
 		<parameter key="guzzle.formatter.class">GuzzleHttp\MessageFormatter</parameter>
 
-        <parameter key="guzzle_bundle.data_collector.class">EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector</parameter>
-        <parameter key="guzzle_bundle.logger.class">EightPoints\Bundle\GuzzleBundle\Log\Logger</parameter>
-		<parameter key="guzzle_bundle.middleware.log.class">EightPoints\Bundle\GuzzleBundle\Middleware\LogMiddleware</parameter>
+        <parameter key="guzzle_bundle.data_collector.class">plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector</parameter>
+        <parameter key="guzzle_bundle.logger.class">plimpton\Bundle\GuzzleBundle\Log\Logger</parameter>
+		<parameter key="guzzle_bundle.middleware.log.class">plimpton\Bundle\GuzzleBundle\Middleware\LogMiddleware</parameter>
 
         <!-- Event MiddleWare Dispatcher class -->
-        <parameter key="guzzle_bundle.middleware.event_dispatcher.class">EightPoints\Bundle\GuzzleBundle\Middleware\EventDispatchMiddleware</parameter>
+        <parameter key="guzzle_bundle.middleware.event_dispatcher.class">plimpton\Bundle\GuzzleBundle\Middleware\EventDispatchMiddleware</parameter>
 
         <parameter key="guzzle.plugin.header.headers" type="collection" />
 
-		<parameter key="guzzle_bundle.middleware.wsse.class">EightPoints\Guzzle\WsseAuthMiddleware</parameter>
+		<parameter key="guzzle_bundle.middleware.wsse.class">plimpton\Guzzle\WsseAuthMiddleware</parameter>
 		<parameter key="guzzle.plugin.wsse.username" />
         <parameter key="guzzle.plugin.wsse.password" />
     </parameters>

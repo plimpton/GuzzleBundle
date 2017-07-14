@@ -1,8 +1,8 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Tests\DataCollector;
+namespace plimpton\Bundle\GuzzleBundle\Tests\DataCollector;
 
-use EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector;
+use plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector;
 
 /**
  * @version   2.1
@@ -11,7 +11,7 @@ use EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector;
 class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \EightPoints\Bundle\GuzzleBundle\Log\Logger
+     * @var \plimpton\Bundle\GuzzleBundle\Log\Logger
      */
     protected $logger;
 
@@ -23,7 +23,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->logger = $this->getMockBuilder('EightPoints\Bundle\GuzzleBundle\Log\Logger')
+        $this->logger = $this->getMockBuilder('plimpton\Bundle\GuzzleBundle\Log\Logger')
                              ->getMock();
     }
 
@@ -33,7 +33,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::__construct
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::__construct
      */
     public function testConstruct()
     {
@@ -53,9 +53,9 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::collect
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getLogs
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getLogGroup
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::collect
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getLogs
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getLogGroup
      */
     public function testCollect()
     {
@@ -77,10 +77,10 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
 
         $logs = $collector->getLogs();
 
-        /** @var \EightPoints\Bundle\GuzzleBundle\Log\LogGroup $log */
+        /** @var \plimpton\Bundle\GuzzleBundle\Log\LogGroup $log */
         foreach ($logs as $log) {
 
-            $this->assertInstanceOf('EightPoints\Bundle\GuzzleBundle\Log\LogGroup', $log);
+            $this->assertInstanceOf('plimpton\Bundle\GuzzleBundle\Log\LogGroup', $log);
 
             $this->assertSame(array('test message'), $log->getMessages());
             $this->assertSame('id', $log->getRequestName());
@@ -93,7 +93,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getName
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getName
      */
     public function testName()
     {
@@ -108,7 +108,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getMessages
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getMessages
      */
     public function testMessages()
     {
@@ -130,7 +130,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
 
         $messages = $collector->getMessages();
 
-        /** @var \EightPoints\Bundle\GuzzleBundle\Log\LogMessage $message */
+        /** @var \plimpton\Bundle\GuzzleBundle\Log\LogMessage $message */
         foreach ($messages as $i => $message) {
 
             $text = sprintf('test message #%d', ($i + 1));
@@ -144,7 +144,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getCallCount
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getCallCount
      */
     public function testCallCount()
     {
@@ -173,7 +173,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getErrorCount
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getErrorCount
      */
     public function testErrorCount()
     {
@@ -186,7 +186,7 @@ class HttpDataCollectorTest extends \PHPUnit_Framework_TestCase
      * @version 2.1
      * @since   2015-06
      *
-     * @covers  EightPoints\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getTotalTime
+     * @covers  plimpton\Bundle\GuzzleBundle\DataCollector\HttpDataCollector::getTotalTime
      */
     public function testTotalTime()
     {

@@ -38,7 +38,7 @@ GuzzleBundle follows semantic versioning. Read more on [semver.org][2].
 To install this bundle, run the command below and you will get the latest version by [Packagist][4].
 
 ``` bash
-composer require eightpoints/guzzle-bundle
+composer require plimpton/guzzle-bundle
 ```
 
 To use the newest (maybe unstable) version please add following into your composer.json:
@@ -46,7 +46,7 @@ To use the newest (maybe unstable) version please add following into your compos
 ``` json
 {
     "require": {
-        "eightpoints/guzzle-bundle": "dev-master"
+        "plimpton/guzzle-bundle": "dev-master"
     }
 }
 ```
@@ -56,7 +56,7 @@ To use the newest (maybe unstable) version please add following into your compos
 ## Usage
 Load bundle in AppKernel.php:
 ``` php
-new EightPoints\Bundle\GuzzleBundle\GuzzleBundle()
+new plimpton\Bundle\GuzzleBundle\GuzzleBundle()
 ```
 
 Configuration in config.yml:

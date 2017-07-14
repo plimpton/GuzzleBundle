@@ -1,6 +1,6 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle\Events;
+namespace plimpton\Bundle\GuzzleBundle\Events;
 
 use Psr\Http\Message\RequestInterface;
 use Symfony\Component\EventDispatcher\Event;

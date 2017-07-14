@@ -1,9 +1,9 @@
 <?php
 
-namespace EightPoints\Bundle\GuzzleBundle;
+namespace plimpton\Bundle\GuzzleBundle;
 
-use EightPoints\Bundle\GuzzleBundle\DependencyInjection\GuzzleExtension;
-use EightPoints\Bundle\GuzzleBundle\DependencyInjection\Compiler\EventHandlerCompilerPass;
+use plimpton\Bundle\GuzzleBundle\DependencyInjection\GuzzleExtension;
+use plimpton\Bundle\GuzzleBundle\DependencyInjection\Compiler\EventHandlerCompilerPass;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
